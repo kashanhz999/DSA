@@ -2,6 +2,7 @@
 # function should return index to the any valid peak element
 class Solution:   
     def peakElement(self,arr, n):
+        
         if n==1:
             return 0
         if arr[0]>= arr[1]:
@@ -11,6 +12,19 @@ class Solution:
         for i in range(1,n-1):
             if (arr[i]>=arr[i-1] and arr[i]>= arr[i+1]):
                 return i
+        
+        # l = 0
+        # h = n-1
+        
+        # while l<h:
+        #     mid = (int) (l + (h-l)/2)
+            
+        #     if arr[mid]<arr[mid+1]:
+        #         l = mid+1
+        #     else:
+        #         r = mid
+        # return l
+        
                 
         
 
